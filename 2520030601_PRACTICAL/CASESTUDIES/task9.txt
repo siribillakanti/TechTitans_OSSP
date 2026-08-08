@@ -1,0 +1,95 @@
+Last login: Thu Aug  6 09:37:19 on ttys002
+siribillakanti@siris-MacBook-Air ~ % ls
+abc			open.c			script.sh
+Applications		package-lock.json	student_portal
+Cprograms		permission_lab		submit
+Desktop			Pictures		TechTitans_OSSP
+Documents		printvalue.c.save	test.txt
+Downloads		private.txt		test1
+Library			programs		test2
+linux_task4		Public			test3.save
+Movies			public.txt		test4.c
+Music			PyCharmMiscProject	test5.c
+open			PycharmProjects
+siribillakanti@siris-MacBook-Air ~ % mkdir task9
+siribillakanti@siris-MacBook-Air ~ % cd task9
+siribillakanti@siris-MacBook-Air task9 % mkdir linux_project
+siribillakanti@siris-MacBook-Air task9 % ls
+linux_project
+siribillakanti@siris-MacBook-Air task9 % cd linux_project
+siribillakanti@siris-MacBook-Air linux_project % mkdir source backup docs
+siribillakanti@siris-MacBook-Air linux_project % ls
+backup	docs	source
+siribillakanti@siris-MacBook-Air linux_project % cd source 
+siribillakanti@siris-MacBook-Air source % touch main.c helper.c README.txt
+siribillakanti@siris-MacBook-Air source % ls
+helper.c	main.c		README.txt
+siribillakanti@siris-MacBook-Air source % nano README.txt
+siribillakanti@siris-MacBook-Air source % head -5 README.txt
+siri billakanti
+a
+b
+c
+d
+siribillakanti@siris-MacBook-Air source % tail -5 README.txt
+x
+y
+z
+the end
+
+siribillakanti@siris-MacBook-Air source % cd ..
+siribillakanti@siris-MacBook-Air linux_project % fwd
+zsh: command not found: fwd
+siribillakanti@siris-MacBook-Air linux_project % ls
+backup	docs	source
+siribillakanti@siris-MacBook-Air linux_project % cp source/main.c backup/
+siribillakanti@siris-MacBook-Air linux_project % cd backup
+siribillakanti@siris-MacBook-Air backup % ls
+main.c
+siribillakanti@siris-MacBook-Air backup % cd ..
+siribillakanti@siris-MacBook-Air linux_project % cp source/README.txt docs/
+siribillakanti@siris-MacBook-Air linux_project % cd docs
+siribillakanti@siris-MacBook-Air docs % ls
+README.txt
+siribillakanti@siris-MacBook-Air docs % cd ..
+siribillakanti@siris-MacBook-Air linux_project % cd source
+siribillakanti@siris-MacBook-Air source % ls
+helper.c	main.c		README.txt
+siribillakanti@siris-MacBook-Air source % mv helper.c functions.c
+siribillakanti@siris-MacBook-Air source % ls
+functions.c	main.c		README.txt
+siribillakanti@siris-MacBook-Air source % chmod 644 README.txt
+siribillakanti@siris-MacBook-Air source % ls -l
+total 8
+-rw-r--r--  1 siribillakanti  staff   0  7 Aug 20:05 functions.c
+-rw-r--r--  1 siribillakanti  staff   0  7 Aug 20:05 main.c
+-rw-r--r--  1 siribillakanti  staff  77  7 Aug 20:06 README.txt
+siribillakanti@siris-MacBook-Air source % cd ..
+siribillakanti@siris-MacBook-Air linux_project % cd backup
+siribillakanti@siris-MacBook-Air backup % ls
+main.c
+siribillakanti@siris-MacBook-Air backup % rm main.c
+siribillakanti@siris-MacBook-Air backup % ls
+siribillakanti@siris-MacBook-Air backup % cd ..
+siribillakanti@siris-MacBook-Air linux_project % rmdir backup
+siribillakanti@siris-MacBook-Air linux_project % ls
+docs	source
+siribillakanti@siris-MacBook-Air linux_project % ls -R
+docs	source
+
+./docs:
+README.txt
+
+./source:
+functions.c	main.c		README.txt
+siribillakanti@siris-MacBook-Air linux_project % tree
+.
+├── docs
+│   └── README.txt
+└── source
+    ├── functions.c
+    ├── main.c
+    └── README.txt
+
+3 directories, 4 files
+siribillakanti@siris-MacBook-Air linux_project % 
