@@ -1,0 +1,2 @@
+This is a file permission test.
+Write permission restored.

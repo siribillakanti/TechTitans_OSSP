@@ -1,0 +1,10 @@
+Line 1: Operating Systems practical.
+Line 2: File management is important.
+Line 3: Backups protect important data.
+Line 4: The cp command copies files.
+Line 5: Linux provides useful file utilities.
+Line 6: A backup can restore deleted data.
+Line 7: Directories organize files.
+Line 8: Permissions protect files.
+Line 9: Regular backups improve data safety.
+Line 10: This is my backup and restore practical.
